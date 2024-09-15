@@ -13,4 +13,15 @@ router.get("/", async (_req, res) => {
   }
 });
 
+router.get("/category/:id", async (req, res) => {
+    const categoryID = req.params.id;
+    
+    try {
+      const data = await knex("vocabulary_content");
+      res.status(200).json(data);
+    } catch (err) {
+      res.status(400).send(`Error retrieving Users: ${err}`);
+    }
+  });
+
 export default router;
