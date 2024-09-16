@@ -6,30 +6,13 @@ const router = express.Router();
 
 const { DB_HOST, DB_NAME, DB_USER, DB_PASSWORD } = process.env;
 
-const db = knex ({
-    client: "mysql2",
-    connection: {
-        host: DB_HOST,
-        user: DB_USER,
-        password: DB_PASSWORD,
-        database: DB_NAME,
-    },
-});
-
-// router.get("/", async (_req, res) => {
-//   try {
-//     const data = await knex("language");
-//     res.status(200).json(data);
-//   } catch (err) {
-//     res.status(400).send(`Error retrieving vocabulary categories: ${err}`);
-//   }
-// });
+const db = initKnex(configuration);
 
 router.get("/:language", async (req, res) => {
   const { language } = req.params;
 
   db.select()
-    .from("language")
+    .from("grammar")
     .where({ language: language })
     .debug(true) // Enable query debugging
     .then((rows) => {
@@ -45,24 +28,43 @@ router.get("/:language", async (req, res) => {
     });
 });
 
-router.get("/:language/:category_id", async (req, res) => {
-  const {language } = req.params;
-  const {category_id } = req.params;
+router.get("/concept/:id", async (req, res) => {
+    const { id } = req.params;
+  
+    db.select()
+      .from("grammar")
+      .where({ id: id })
+      .debug(true) // Enable query debugging
+      .then((rows) => {
+        if (rows.length > 0) {
+          res.status(200).json(rows);
+        } else {
+          res.status(404).send("Grammar concept not found");
+        }
+      })
+      .catch((error) => {
+        console.error("Unable to process query:", error);
+        res.status(500).send('Error retrieving grammar concept data');
+      });
+  });
+
+router.get("/quiz/:grammar_id", async (req, res) => {
+  const {grammar_id } = req.params;
 
   db.select()
-    .from("vocabulary_content")
-    .where({ category_id: category_id }, {language: language})
+    .from("grammar_quiz")
+    .where({ grammar_id: grammar_id })
     .debug(true) // Enable query debugging
     .then((rows) => {
       if (rows.length > 0) {
         res.status(200).json(rows);
       } else {
-        res.status(404).send("Vocabulary content not found");
+        res.status(404).send("Grammar quiz content not found");
       }
     })
     .catch((error) => {
       console.error("Unable to process query:", error);
-      res.status(500).send('Error retrieving language data');
+      res.status(500).send('Error retrieving quiz data');
     });
 });
 
