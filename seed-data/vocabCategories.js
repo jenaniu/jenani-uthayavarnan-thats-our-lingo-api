@@ -29,4 +29,10 @@ export default [
       language: "French",
       level: 2
     },
+    {
+      vocab_category: "Food",
+      language: "Korean",
+      level: 1
+
+    }
   ];

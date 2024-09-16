@@ -5,24 +5,11 @@
 export function up(knex) {
     return knex.schema
       .createTable("grammar", (table) => {
-        table.integer("id").primary();
+        table.increments("id").primary();
         table.string("grammar_concept").notNullable();
         table.string("language").notNullable();
-        table.integer("level").notNullable();
-  
-      })
-      .createTable("grammar_content", (table) => {
-        table.integer("id").primary();
-        table.string("concept_title").notNullable();
         table.string("concept_text").notNullable();
-        table
-        .integer("grammar_id")
-        .unsigned() 
-        .notNullable()
-        .references("id") 
-        .inTable("grammar") 
-        .onUpdate("CASCADE")
-        .onDelete("CASCADE");
+        table.integer("level").notNullable();  
       })
       
       .createTable("grammar_quiz", (table) => {
@@ -46,5 +33,5 @@ export function up(knex) {
    * @returns { Promise<void> }
    */
   export function down(knex) {
-    return knex.schema.dropTable("grammar").dropTable("grammar_content").dropTable("grammar_quiz");
+    return knex.schema.dropTable("grammar").dropTable("grammar_quiz");
   }
