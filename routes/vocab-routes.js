@@ -6,15 +6,7 @@ const router = express.Router();
 
 const { DB_HOST, DB_NAME, DB_USER, DB_PASSWORD } = process.env;
 
-const db = knex ({
-    client: "mysql2",
-    connection: {
-        host: DB_HOST,
-        user: DB_USER,
-        password: DB_PASSWORD,
-        database: DB_NAME,
-    },
-});
+const db = initKnex(configuration);
 
 // router.get("/", async (_req, res) => {
 //   try {
@@ -45,13 +37,12 @@ router.get("/:language", async (req, res) => {
     });
 });
 
-router.get("/:language/:category_id", async (req, res) => {
-  const {language } = req.params;
+router.get("/language/:category_id", async (req, res) => {
   const {category_id } = req.params;
 
   db.select()
     .from("vocabulary_content")
-    .where({ category_id: category_id }, {language: language})
+    .where({ category_id: category_id })
     .debug(true) // Enable query debugging
     .then((rows) => {
       if (rows.length > 0) {
