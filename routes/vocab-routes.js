@@ -37,12 +37,13 @@ router.get("/:language", async (req, res) => {
     });
 });
 
-router.get("/language/:category_id", async (req, res) => {
+router.get("/:language/:category_id", async (req, res) => {
   const {category_id } = req.params;
+  const {language } = req.params;
 
   db.select()
     .from("vocabulary_content")
-    .where({ category_id: category_id })
+    .where({ category_id: category_id }, { language: language })
     .debug(true) // Enable query debugging
     .then((rows) => {
       if (rows.length > 0) {

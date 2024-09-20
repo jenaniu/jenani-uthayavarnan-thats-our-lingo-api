@@ -1,6 +1,5 @@
 // import seed data files, arrays of objects
 import grammarCategories from "../seed-data/grammarCategories.js";
-import grammarContent from "../seed-data/grammarContent.js";
 import grammarQuiz from "../seed-data/grammarQuiz.js";
 
 

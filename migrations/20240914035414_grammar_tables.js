@@ -13,10 +13,11 @@ export function up(knex) {
       })
       
       .createTable("grammar_quiz", (table) => {
-        table.integer("id").primary();
-        table.string("quiz_question").notNullable();
+        table.increments("id").primary();
+        table.string("question").notNullable();
+        table.string("image").notNullable();
+        table.string("options").notNullable();
         table.string("correct_answer").notNullable();
-        table.string("incorrect_answers").notNullable();
         table
         .integer("grammar_id")
         .unsigned() 
