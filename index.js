@@ -12,8 +12,8 @@ app.use(cors())
 
 const PORT = process.env.PORT || 5050;
 
-import vocabRoutes from "../routes/vocab-routes.js";
-import grammarRoutes from "../routes/grammar-routes.js";
+import vocabRoutes from "./routes/vocab-routes.js";
+import grammarRoutes from "./routes/grammar-routes.js";
 
 // all users routes
 app.use("/vocabulary", vocabRoutes);
