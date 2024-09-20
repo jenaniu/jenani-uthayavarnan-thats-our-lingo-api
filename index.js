@@ -21,5 +21,5 @@ app.use("/vocabulary", vocabRoutes);
 app.use("/grammar", grammarRoutes);
 
 app.listen(PORT, () => {
-  console.log(`running at ${PORT}`);
+  console.log(`running at http://localhost:${PORT}`);
 });
