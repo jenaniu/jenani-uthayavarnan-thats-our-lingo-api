@@ -9,9 +9,8 @@ export default {
     password: process.env.DB_PASSWORD,
     charset: "utf8",
   },
-  // production: {
-  //   client: "mysql2",
-  //   connection: process.env.JAWSDB_URL,
-  // }
-//  vercel
+  production: {
+    client: "mysql2",
+    connection: process.env.JAWSDB_URL,
+  }
 }
