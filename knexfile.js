@@ -20,5 +20,5 @@ export default {
   //     tableName: "knex_migrations",
   //   }
   // }
-  
+//  vercel
 }
