@@ -16,7 +16,7 @@ import vocabRoutes from "./routes/vocab-routes.js";
 import grammarRoutes from "./routes/grammar-routes.js";
 
 app.get('/', (req, res) => {
-  res.send("That's Our Lingo API!")
+  res.send("That's Our Lingo API!", process.env.DB_USER)
   
 }); 
 
