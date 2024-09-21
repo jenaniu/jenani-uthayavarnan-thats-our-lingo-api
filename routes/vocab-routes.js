@@ -40,6 +40,8 @@ router.get("/:language", async (req, res) => {
 router.get("/:language/:category_id", async (req, res) => {
   const {category_id } = req.params;
   const {language } = req.params;
+  console.log("JAWSDB_URL:", process.env.JAWSDB_URL);
+
 
   db.select()
     .from("vocabulary_content")
