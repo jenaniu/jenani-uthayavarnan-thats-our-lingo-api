@@ -11,9 +11,7 @@ export default {
   },
   production: {
     client: "mysql2",
-    connection: {
-      connection: process.env.JAWSDB_URL,
-    },
+    connection: process.env.JAWSDB_URL,
   }
 //  vercel
 }
