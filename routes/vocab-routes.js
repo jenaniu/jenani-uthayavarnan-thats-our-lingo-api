@@ -4,9 +4,12 @@ import configuration from "../knexfile.js";
 import express from "express";
 const router = express.Router();
 
-const { DB_HOST, DB_NAME, DB_USER, DB_PASSWORD, } = process.env;
+const { DB_HOST, DB_NAME, DB_USER, DB_PASSWORD, JAWSDB_URL } = process.env;
 
-const db = initKnex(configuration);
+const knex = initKnex({
+  client: "mysql2",
+  connection: JAWSDB_URL, 
+});
 
 // router.get("/", async (_req, res) => {
 //   try {
@@ -19,7 +22,6 @@ const db = initKnex(configuration);
 
 router.get("/:language", async (req, res) => {
   console.log('Vocab route hit');
-  console.log('Connecting to database:', process.env.JAWSDB_URL);
   const { language } = req.params;
 
   db.select()
@@ -42,7 +44,6 @@ router.get("/:language", async (req, res) => {
 router.get("/:language/:category_id", async (req, res) => {
   const {category_id } = req.params;
   const {language } = req.params;
-  console.log("JAWSDB_URL:", process.env.JAWSDB_URL);
 
 
   db.select()
