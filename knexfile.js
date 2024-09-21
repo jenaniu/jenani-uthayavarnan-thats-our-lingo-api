@@ -9,4 +9,15 @@ export default {
     password: process.env.DB_PASSWORD,
     charset: "utf8",
   },
-}
+  production: {
+    client: "mysql2",
+    connection: process.env.DB_URL,
+    pool: {
+      min: 2,
+      max: 10,
+    },
+    migrations: {
+      tableName: "knex_migrations",
+    }
+  }
+},
