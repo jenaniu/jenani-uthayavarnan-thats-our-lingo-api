@@ -18,6 +18,7 @@ const db = initKnex(configuration);
 // });
 
 router.get("/:language", async (req, res) => {
+  console.log('Vocab route hit');
   const { language } = req.params;
 
   db.select()
