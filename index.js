@@ -1,6 +1,7 @@
 import "dotenv/config";
 import express from "express";
 import cors from 'cors';
+import knex from "knex";
 
 const app = express();
 const { CORS_ORIGIN } = process.env;
