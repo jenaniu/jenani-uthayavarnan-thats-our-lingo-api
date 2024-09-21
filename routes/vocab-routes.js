@@ -4,7 +4,7 @@ const knex = initKnex(configuration);
 import express from "express";
 const router = express.Router();
 
-const { DB_HOST, DB_NAME, DB_USER, DB_PASSWORD } = process.env;
+const { DB_HOST, DB_NAME, DB_USER, DB_PASSWORD, } = process.env;
 
 const db = initKnex(configuration);
 
