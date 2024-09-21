@@ -6,10 +6,7 @@ const router = express.Router();
 
 const { DB_HOST, DB_NAME, DB_USER, DB_PASSWORD, JAWSDB_URL } = process.env;
 
-const knex = initKnex({
-  client: "mysql2",
-  connection: JAWSDB_URL, 
-});
+const db = initKnex(configuration);
 
 // router.get("/", async (_req, res) => {
 //   try {
