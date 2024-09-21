@@ -18,6 +18,8 @@ import grammarRoutes from "./routes/grammar-routes.js";
 
 app.get('/', (req, res) => {
   res.send("That's Our Lingo API!")
+  console.log('Connecting to database:', process.env.JAWSDB_URL);
+
 }); 
 
 app.use("/vocabulary", vocabRoutes);
