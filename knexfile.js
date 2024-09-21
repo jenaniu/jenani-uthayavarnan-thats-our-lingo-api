@@ -11,7 +11,7 @@ export default {
   },
   production: {
     client: "mysql2",
-    connection: process.env.DB_URL,
+    connection: process.env.JAWSDB_URL,
     pool: {
       min: 2,
       max: 10,
