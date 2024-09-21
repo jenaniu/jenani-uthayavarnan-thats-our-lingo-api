@@ -1,24 +1,26 @@
 import "dotenv/config";
+import knex from "knex";
 
-export default {
+const config = {
   client: "mysql2",
-  connection: {
-    host: process.env.DB_HOST,
-    database: process.env.DB_NAME,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    charset: "utf8",
+  connection: process.env.JAWSDB_URL,
+  pool: {
+    min: 2,
+    max: 10,
   },
-  production: {
-    client: "mysql2",
-    connection: process.env.JAWSDB_URL,
-    pool: {
-      min: 2,
-      max: 10,
-    },
-    migrations: {
-      tableName: "knex_migrations",
-    }
-  }
-  
-}
+  migrations: {
+    tableName: "knex_migrations",
+  },
+};
+
+const db = knex(config);
+
+db.raw('SELECT 1')
+  .then(() => {
+    console.log('Database connection successful');
+  })
+  .catch((err) => {
+    console.error('Database connection error:', err);
+  });
+
+export default db;
