@@ -19,6 +19,7 @@ const db = initKnex(configuration);
 
 router.get("/:language", async (req, res) => {
   console.log('Vocab route hit');
+  console.log('Connecting to database:', process.env.JAWSDB_URL);
   const { language } = req.params;
 
   db.select()
