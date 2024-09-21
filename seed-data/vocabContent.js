@@ -11,12 +11,17 @@ export default [
     },
     {
       vocab_word: "la poire",
-      translation: "apple",
+      translation: "pear",
       category_id: 1,
     },
     {
-      vocab_word: "la pomme",
-      translation: "apple",
+      vocab_word: "la fraise",
+      translation: "strawberry",
+      category_id: 1,
+    },
+    {
+      vocab_word: "le citron",
+      translation: "lemon",
       category_id: 1,
     },
     {
@@ -45,39 +50,39 @@ export default [
       category_id: 2,
     },
     {
-      vocab_word: "Bonjour",
-      translation: "Hello",
-      category_id: 3, // Hello & Goodbye (French)
-    },
-    {
-      vocab_word: "Au revoir",
-      translation: "Goodbye",
-      category_id: 3, // Hello & Goodbye (French)
-    },
-    {
-      vocab_word: "Merci",
-      translation: "Thank you",
-      category_id: 3, // Hello & Goodbye (French)
-    },
-    {
       vocab_word: "Voyage",
       translation: "Travel",
-      category_id: 2, // Travel 101 (French)
+      category_id: 2, 
     },
     {
       vocab_word: "Passeport",
       translation: "Passport",
-      category_id: 2, // Travel 101 (French)
+      category_id: 2, 
     },
     {
       vocab_word: "Hôtel",
       translation: "Hotel",
-      category_id: 2, // Travel 101 (French)
+      category_id: 2, 
+    },
+    {
+      vocab_word: "Bonjour",
+      translation: "Hello",
+      category_id: 3, 
+    },
+    {
+      vocab_word: "Au revoir",
+      translation: "Goodbye",
+      category_id: 3,
+    },
+    {
+      vocab_word: "Merci",
+      translation: "Thank you",
+      category_id: 3,
     },
     {
       vocab_word: "lundi",
       translation: "Monday",
-      category_id: 4, // Days of the week (French)
+      category_id: 4, 
     },
     {
       vocab_word: "mardi",
@@ -112,22 +117,22 @@ export default [
     {
       vocab_word: "Un",
       translation: "One",
-      category_id: 5, // Numbers 1-10 (French)
+      category_id: 5, 
     },
     {
       vocab_word: "Deux",
       translation: "Two",
-      category_id: 5, // Numbers 1-10 (French)
+      category_id: 5, 
     },
     {
       vocab_word: "Trois",
       translation: "Three",
-      category_id: 5, // Numbers 1-10 (French)
+      category_id: 5, 
     },
     {
       vocab_word: "janvier",
       translation: "January",
-      category_id: 6, // Months of the year (French)
+      category_id: 6, 
     },
     {
       vocab_word: "février",
@@ -192,31 +197,31 @@ export default [
     {
       vocab_word: "밥",
       translation: "Rice",
-      category_id: 7, // Food (Korean)
+      category_id: 7,
     },
     {
       vocab_word: "김치",
       translation: "Kimchi",
-      category_id: 7, // Food (Korean)
+      category_id: 7,
     },
     {
       vocab_word: "불고기",
       translation: "Bulgogi",
-      category_id: 7, // Food (Korean)
+      category_id: 7,
     },
     {
       vocab_word: "떡볶이",
       translation: "Tteokbokki",
-      category_id: 7, // Food (Korean)
+      category_id: 7,
     },
     {
       vocab_word: "라면",
       translation: "Ramen",
-      category_id: 7, // Food (Korean)
+      category_id: 7,
     },
     {
       vocab_word: "비빔밥",
       translation: "Bibimbap",
-      category_id: 7, // Food (Korean)
+      category_id: 7,
     },
   ];
