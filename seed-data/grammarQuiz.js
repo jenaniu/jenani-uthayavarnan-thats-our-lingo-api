@@ -58,57 +58,90 @@ export default [
         correct_answer: "ai",
         grammar_id: 2,
     },
-
-    // grammar_id: 3 - Date and Time
     {
         question: "Fill in the blank!",
         image: "images/grammar-3-img-1.png",
         options: JSON.stringify(["pommes", "poires", "ananas", "raisins"]),
         correct_answer: "poires",
-        grammar_id: 3,
+        grammar_id: 2,
     },
     {
         question: "How do we say this in French?",
         image: "images/grammar-3-img-2.png",
         options: JSON.stringify(["l'ananas", "la pomme", "la poire", "la fraise"]),
         correct_answer: "l'ananas",
-        grammar_id: 3,
+        grammar_id: 2,
     },
     {
-        question: "How do we say this in French?",
-        image: "images/grammar-3-img-3.png",
-        options: JSON.stringify(["Je m'appelle Jennifer!", "J'ai Jennifer!", "Nous sommes Jennifer!", "Tu es Jennifer!"]),
-        correct_answer: "Je m'appelle Jennifer!",
-        grammar_id: 3,
-    },
-    {
-        question: "How do you ask 'What time is it?' in French?",
-        image: "images/grammar-1-img-5.png",
-        options: JSON.stringify(["Quelle heure est-il?", "Où est-ce?", "Qui est-ce?", "Qu'est-ce que c'est?"]),
-        correct_answer: "Quelle heure est-il?",
-        grammar_id: 3,
-    },
-    {
-        question: "How do you say 'Today is Monday' in French?",
-        image: "images/grammar-1-img-6.png",
-        options: JSON.stringify(["Aujourd'hui c'est lundi", "Hier c'était lundi", "Demain c'est lundi", "Lundi est aujourd'hui"]),
-        correct_answer: "Aujourd'hui c'est lundi",
+        question: "How do you say 'December 25, 2024' in French?",
+        image: "",
+        options: JSON.stringify([
+            "Le 25 décembre 2024",
+            "Le 25 novembre 2024",
+            "Le 25 janvier 2024",
+            "Le 25 août 2024"
+        ]),
+        correct_answer: "Le 25 décembre 2024",
         grammar_id: 3,
     },
 
-    // grammar_id: 4 - Phrases interrogatives
     {
-        question: "Which phrase means 'Where is the library?'",
-        image: "images/grammar-2-img-7.png",
-        options: JSON.stringify(["Où est la bibliothèque?", "Qui est la bibliothèque?", "Comment est la bibliothèque?", "Pourquoi est la bibliothèque?"]),
-        correct_answer: "Où est la bibliothèque?",
+        question: "How do you say 'Monday' in French?",
+        image: "",
+        options: JSON.stringify(["lundi", "mardi", "mercredi", "jeudi"]),
+        correct_answer: "lundi",
+        grammar_id: 3,
+    },
+    {
+        question: "What is the French term for 'August'?",
+        image: "",
+        options: JSON.stringify(["août", "septembre", "octobre", "novembre"]),
+        correct_answer: "août",
+        grammar_id: 3,
+    },
+    {
+        question: "How do you say 'Wednesday' in French?",
+        image: "",
+        options: JSON.stringify(["mardi", "mercredi", "jeudi", "samedi"]),
+        correct_answer: "mercredi",
+        grammar_id: 3,
+    },
+    {
+        question: "Which day of the week is 'samedi'?",
+        image: "",
+        options: JSON.stringify(["Saturday", "Friday", "Thursday", "Wednesday"]),
+        correct_answer: "Saturday",
+        grammar_id: 3,
+    },
+
+    // grammar_id: 4 - Masculine and Feminine Nouns
+    {
+        question: "Which article is used for masculine nouns?",
+        image: "",
+        options: JSON.stringify(["un", "une", "le", "la"]),
+        correct_answer: "un",
         grammar_id: 4,
     },
     {
-        question: "How do you ask 'Why are you late?' in French?",
-        image: "images/grammar-2-img-8.png",
-        options: JSON.stringify(["Pourquoi es-tu en retard?", "Qu'est-ce que c'est en retard?", "Où es-tu en retard?", "Quand es-tu en retard?"]),
-        correct_answer: "Pourquoi es-tu en retard?",
+        question: "What is the feminine form of 'un pomme'?",
+        image: "",
+        options: JSON.stringify(["la pomme", "le pomme", "une citron", "un citron"]),
+        correct_answer: "la pomme",
+        grammar_id: 4,
+    },
+    {
+        question: "What article do you use with feminine nouns?",
+        image: "",
+        options: JSON.stringify(["un", "une", "le", "les"]),
+        correct_answer: "une",
+        grammar_id: 4,
+    },
+    {
+        question: "Which of the following is a masculine noun?",
+        image: "",
+        options: JSON.stringify(["la table", "un livre", "une chaise", "la voiture"]),
+        correct_answer: "un livre",
         grammar_id: 4,
     },
 ];
+

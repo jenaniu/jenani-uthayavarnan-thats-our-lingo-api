@@ -8,7 +8,7 @@ export function up(knex) {
         table.increments("id").primary();
         table.string("grammar_concept").notNullable();
         table.string("language").notNullable();
-        table.string("concept_text").notNullable();
+        table.text("concept_text").notNullable();
         table.integer("level").notNullable();  
       })
       

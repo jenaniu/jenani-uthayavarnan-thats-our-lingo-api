@@ -75,19 +75,39 @@ export default [
       category_id: 2, // Travel 101 (French)
     },
     {
-      vocab_word: "Chat",
-      translation: "Cat",
-      category_id: 4, // Animals (French)
+      vocab_word: "lundi",
+      translation: "Monday",
+      category_id: 4, // Days of the week (French)
     },
     {
-      vocab_word: "Chien",
-      translation: "Dog",
-      category_id: 4, // Animals (French)
+      vocab_word: "mardi",
+      translation: "Tuesday",
+      category_id: 4,
     },
     {
-      vocab_word: "Oiseau",
-      translation: "Bird",
-      category_id: 4, // Animals (French)
+      vocab_word: "mercredi",
+      translation: "Wednesday",
+      category_id: 4,
+    },
+    {
+      vocab_word: "jeudi",
+      translation: "Thursday",
+      category_id: 4,
+    },
+    {
+      vocab_word: "vendredi",
+      translation: "Friday",
+      category_id: 4,
+    },
+    {
+      vocab_word: "samedi",
+      translation: "Saturday",
+      category_id: 4,
+    },
+    {
+      vocab_word: "dimanche",
+      translation: "Sunday",
+      category_id: 4,
     },
     {
       vocab_word: "Un",
@@ -105,19 +125,64 @@ export default [
       category_id: 5, // Numbers 1-10 (French)
     },
     {
-      vocab_word: "Rouge",
-      translation: "Red",
-      category_id: 6, // Colours (French)
+      vocab_word: "janvier",
+      translation: "January",
+      category_id: 6, // Months of the year (French)
     },
     {
-      vocab_word: "Bleu",
-      translation: "Blue",
-      category_id: 6, // Colours (French)
+      vocab_word: "février",
+      translation: "February",
+      category_id: 6,
     },
     {
-      vocab_word: "Vert",
-      translation: "Green",
-      category_id: 6, // Colours (French)
+      vocab_word: "mars",
+      translation: "March",
+      category_id: 6,
+    },
+    {
+      vocab_word: "avril",
+      translation: "April",
+      category_id: 6,
+    },
+    {
+      vocab_word: "mai",
+      translation: "May",
+      category_id: 6,
+    },
+    {
+      vocab_word: "juin",
+      translation: "June",
+      category_id: 6,
+    },
+    {
+      vocab_word: "juillet",
+      translation: "July",
+      category_id: 6,
+    },
+    {
+      vocab_word: "août",
+      translation: "August",
+      category_id: 6,
+    },
+    {
+      vocab_word: "septembre",
+      translation: "September",
+      category_id: 6,
+    },
+    {
+      vocab_word: "octobre",
+      translation: "October",
+      category_id: 6,
+    },
+    {
+      vocab_word: "novembre",
+      translation: "November",
+      category_id: 6,
+    },
+    {
+      vocab_word: "décembre",
+      translation: "December",
+      category_id: 6,
     },
     {
       vocab_word: "사과",
