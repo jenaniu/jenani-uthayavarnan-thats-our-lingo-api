@@ -46,14 +46,14 @@ export default [
     },
     {
         question: "What is the conjugation of 'avoir' for 'they' (feminine)?",
-        image: "images/grammar-placeholder-3",
+        image: "images/grammar-placeholder-3.png",
         options: JSON.stringify(["Elles ont", "Elles sont", "Elles font", "Elles vont"]),
         correct_answer: "Elles ont",
         grammar_id: 2,
     },
     {
         question: "Fill in the blank: 'J'______ un livre.'",
-        image: "images/grammar-placeholder-2",
+        image: "images/grammar-placeholder-2.png",
         options: JSON.stringify(["ai", "suis", "vais", "fais"]),
         correct_answer: "ai",
         grammar_id: 2,
@@ -87,28 +87,28 @@ export default [
 
     {
         question: "How do you say 'Monday' in French?",
-        image: "images/grammar-placeholder",
+        image: "images/grammar-placeholder.png",
         options: JSON.stringify(["lundi", "mardi", "mercredi", "jeudi"]),
         correct_answer: "lundi",
         grammar_id: 3,
     },
     {
         question: "What is the French term for 'August'?",
-        image: "images/grammar-placeholder-2",
+        image: "images/grammar-placeholder-2.png",
         options: JSON.stringify(["août", "septembre", "octobre", "novembre"]),
         correct_answer: "août",
         grammar_id: 3,
     },
     {
         question: "How do you say 'Wednesday' in French?",
-        image: "images/grammar-placeholder-3",
+        image: "images/grammar-placeholder-2.png",
         options: JSON.stringify(["mardi", "mercredi", "jeudi", "samedi"]),
         correct_answer: "mercredi",
         grammar_id: 3,
     },
     {
         question: "Which day of the week is 'samedi'?",
-        image: "images/grammar-placeholder",
+        image: "images/grammar-placeholder.png",
         options: JSON.stringify(["Saturday", "Friday", "Thursday", "Wednesday"]),
         correct_answer: "Saturday",
         grammar_id: 3,
@@ -117,14 +117,14 @@ export default [
     // grammar_id: 4 - Masculine and Feminine Nouns
     {
         question: "Which article is used for masculine nouns?",
-        image: "images/grammar-placeholder-2",
+        image: "images/grammar-placeholder-2.png",
         options: JSON.stringify(["un", "une", "le", "la"]),
         correct_answer: "un",
         grammar_id: 4,
     },
     {
         question: "What is the feminine form of 'un pomme'?",
-        image: "images/grammar-placeholder-3",
+        image: "images/grammar-placeholder-3.png",
         options: JSON.stringify(["la pomme", "le pomme", "une citron", "un citron"]),
         correct_answer: "la pomme",
         grammar_id: 4,
@@ -138,7 +138,7 @@ export default [
     },
     {
         question: "Which of the following is a masculine noun?",
-        image: "images/grammar-placeholder-2",
+        image: "images/grammar-placeholder-2.png",
         options: JSON.stringify(["la table", "un livre", "une chaise", "la voiture"]),
         correct_answer: "un livre",
         grammar_id: 4,
