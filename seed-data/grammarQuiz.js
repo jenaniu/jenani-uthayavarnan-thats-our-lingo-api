@@ -8,13 +8,6 @@ export default [
         grammar_id: 1,
     },
     {
-        question: "How do you conjugate the verb 'être' for 'I'?",
-        image: "images/grammar-placeholder.png",
-        options: JSON.stringify(["Je suis", "J'ai", "Je vais", "Je fais"]),
-        correct_answer: "Je suis",
-        grammar_id: 1,
-    },
-    {
         question: "What is the correct form of 'être' for 'we'?",
         image: "images/grammar-3-img-2.png",
         options: JSON.stringify(["Nous sommes", "Nous avons", "Nous faisons", "Nous allons"]),
@@ -42,13 +35,6 @@ export default [
         image: "images/grammar-4-img-6.png",
         options: JSON.stringify(["J'ai les citrons!", "Nous sommes les citrons!", "Elles ont les citrons!", "Nous avons les citrons!"]),
         correct_answer: "Nous avons les citrons!",
-        grammar_id: 2,
-    },
-    {
-        question: "What is the conjugation of 'avoir' for 'they' (feminine)?",
-        image: "images/grammar-placeholder-3.png",
-        options: JSON.stringify(["Elles ont", "Elles sont", "Elles font", "Elles vont"]),
-        correct_answer: "Elles ont",
         grammar_id: 2,
     },
     {
@@ -116,31 +102,17 @@ export default [
 
     // grammar_id: 4 - Masculine and Feminine Nouns
     {
-        question: "Which article is used for masculine nouns?",
+        question: "Which article is used for masculine nouns (singular)?",
         image: "images/grammar-placeholder-2.png",
         options: JSON.stringify(["un", "une", "le", "la"]),
         correct_answer: "un",
         grammar_id: 4,
     },
     {
-        question: "What is the feminine form of 'un pomme'?",
-        image: "images/grammar-placeholder-3.png",
-        options: JSON.stringify(["la pomme", "le pomme", "une citron", "un citron"]),
-        correct_answer: "la pomme",
-        grammar_id: 4,
-    },
-    {
-        question: "What article do you use with feminine nouns?",
+        question: "What article do you use with feminine nouns (singular)?",
         image: "images/grammar-3-img-2.png",
         options: JSON.stringify(["un", "une", "le", "les"]),
         correct_answer: "une",
-        grammar_id: 4,
-    },
-    {
-        question: "Which of the following is a masculine noun?",
-        image: "images/grammar-placeholder-2.png",
-        options: JSON.stringify(["la table", "un livre", "une chaise", "la voiture"]),
-        correct_answer: "un livre",
         grammar_id: 4,
     },
     {
