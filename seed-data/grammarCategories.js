@@ -55,4 +55,10 @@ export default [
       "The gender of the noun has an impact when we use them with adjectives and verbs!",
     level: 2,
   },
+  {
+    grammar_concept: "Topic Markers",
+    language: "Korean",
+    concept_text: "Concept details coming soon!",
+    level: 1,
+  },
 ];

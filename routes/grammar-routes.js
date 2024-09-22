@@ -48,15 +48,16 @@ router.get("/concept/:id", async (req, res) => {
       });
   });
 
-router.get("/quiz/:level", async (req, res) => {
-  const { level } = req.params;
+router.get("/:language/quiz/:level", async (req, res) => {
+  const { level, language } = req.params;
 
   db.select()
     .from("grammar_quiz")
     .whereIn("grammar_id", function() {
       this.select("id")
         .from("grammar")
-        .where("level", level);
+        .where({ level }) 
+        .andWhere({ language }) ;
     })
     .debug(true) // Enable query debugging
     .then((rows) => {

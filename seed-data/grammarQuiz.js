@@ -143,5 +143,20 @@ export default [
         correct_answer: "un livre",
         grammar_id: 4,
     },
+    {
+        question: "Which of the following is a masculine noun?",
+        image: "images/grammar-placeholder-2.png",
+        options: JSON.stringify(["la table", "un livre", "une chaise", "la voiture"]),
+        correct_answer: "un livre",
+        grammar_id: 4,
+    },
+    {
+        question: "What is the topic marker in Korean for 'I'?",
+        image: "images/grammar-placeholder-3.png",
+        options: JSON.stringify(["이", "가", "은", "는"]),
+        correct_answer: "은",
+        grammar_id: 5,
+    }
+    
 ];
 
