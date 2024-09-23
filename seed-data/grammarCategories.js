@@ -2,13 +2,13 @@ export default [
   {
     grammar_concept: "Être verb",
     language: "French",
-    concept_text: "Être is an irregular verb, which means “to be” in French! This is an important verb to understand (we’ll be using it a lot later in your learning journey)! \nLet's conjugate Être together! \nJe suis - I am \nTu es - You are \nIl/Elle est - He/She is \nNous sommes - We are \nVous êtes - You (plural or formal) are \nIls/Elles sont - They are\n\nExamples:\nJe suis fatigué. \nI am tired.\n\nVous êtes fatiguées.\nYou (plural or formal) are tired.",
+    concept_text: "Être is an irregular verb, which means “to be” in French! This is an important verb to understand (we’ll be using it a lot later in your learning journey)! \n\nLet's conjugate Être together! \nJe suis - I am \nTu es - You are \nIl/Elle est - He/She is \nNous sommes - We are \nVous êtes - You (plural or formal) are \nIls/Elles sont - They are\n\nExamples:\nJe suis fatigué. \nI am tired.\n\nVous êtes fatiguées.\nYou (plural or formal) are tired.",
     level: 1
   },
   {
     grammar_concept: "Avoir verb",
     language: "French",
-    concept_text: "Avoir is an irregular verb, which means “to have” in French! This is an important verb to understand (we’ll be using it a lot later in your learning journey)! \nLet's conjugate Avoir together! \nJ’ai - I have (note the “e” in Je is removed!) \nTu as - You have \nIl/Elle a - He/She has \nNous avons - We have \nVous avez - You (plural or formal) have \nIls/Elles ont - They have \nExamples:\nJ’ai faim. \nI am hungry.\nNous avons une maison\nWe have a house.",
+    concept_text: "Avoir is an irregular verb, which means “to have” in French! This is an important verb to understand (we’ll be using it a lot later in your learning journey)! \n\nLet's conjugate Avoir together! \n\nJ’ai - I have (note the “e” in Je is removed!) \nTu as - You have \nIl/Elle a - He/She has \nNous avons - We have \nVous avez - You (plural or formal) have \nIls/Elles ont - They have \n\nExamples:\nJ’ai faim. \nI am hungry.\nNous avons une maison\nWe have a house.",
     level: 1,
   },
   {
