@@ -15,7 +15,7 @@ export default [
       level: 1
     },
     {
-      vocab_category: "Animals",
+      vocab_category: "Days of the week",
       language: "French",
       level: 2,
     },
@@ -25,8 +25,14 @@ export default [
       level: 2,
     },
     {
-      vocab_category: "Colours",
+      vocab_category: "Months of the year",
       language: "French",
       level: 2
     },
+    {
+      vocab_category: "Food",
+      language: "Korean",
+      level: 1
+
+    }
   ];
